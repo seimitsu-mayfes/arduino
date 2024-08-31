@@ -2,16 +2,18 @@
 
 import { useState } from 'react';
 
-export default function UpperBar({ onTabChange }: { onTabChange: (tab: string) => void }) {
-  const [activeTab, setActiveTab] = useState('knowledge');
+type TabName = 'knowledge' | 'task' | 'debug' | 'comment';
 
-  const handleTabChange = (tab: string) => {
+export default function UpperBar({ onTabChange }: { onTabChange: (tab: TabName) => void }) {
+  const [activeTab, setActiveTab] = useState<TabName>('knowledge');
+
+  const handleTabChange = (tab: TabName) => {
     setActiveTab(tab);
     onTabChange(tab);
   };
-
+  
   return (
-    <nav className="flex justify-center bg-gray-800 text-white py-4">
+    <nav className="sticky top-24 left-0 w-full bg-gray-800 text-white py-4 z-50 flex justify-center">
       <button
         className={`mx-4 px-4 py-2 rounded ${activeTab === 'knowledge' ? 'bg-blue-600' : ''}`}
         onClick={() => handleTabChange('knowledge')}
@@ -39,4 +41,6 @@ export default function UpperBar({ onTabChange }: { onTabChange: (tab: string) =
     </nav>
   );
 }
+
+
 

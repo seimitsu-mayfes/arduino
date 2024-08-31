@@ -25,7 +25,7 @@ export default function Sidebar() {
           <li><Link href="/what_is_arduino" className="text-white">Arduinoとは</Link></li>
           <li><Link href="/setup" className="text-white">セットアップ</Link></li>
           <li><Link href="/prior_knowledge" className="text-white">予備知識</Link></li>
-          <li><Link href="/LED" className="text-white">LEDを実装</Link></li>
+          <li><Link href="do_them/LED" className="text-white">LEDを実装</Link></li>
           <li><a href="#" className="text-white">ボタンを実装</a></li>
           <li><a href="#" className="text-white">超音波センサを実装</a></li>
           <li><a href="#" className="text-white">モーター</a></li>
