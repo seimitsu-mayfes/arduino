@@ -1,7 +1,7 @@
 // app/setup/page.tsx
-import { lusitana } from '../ui/fonts'; // フォントのインポート
-import Image from 'next/image'; // Next.js の Image コンポーネントをインポート
-import Link from 'next/link'; // Next.js の Link コンポーネントをインポート
+import { lusitana } from '../ui/fonts';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function WhatIsArduino() {
   return (
@@ -17,7 +17,7 @@ export default function WhatIsArduino() {
         </div>
         <div className="flex items-center justify-center p-6">
           <Image
-            src="/arduino-image.png" // 必要に応じて画像ファイルのパスを設定
+            src="/arduino-image.png"
             width={800}
             height={600}
             className="block"
@@ -30,6 +30,7 @@ export default function WhatIsArduino() {
         >
           <span>More Info</span>
         </Link>
+        
       </div>
     </div>
   );

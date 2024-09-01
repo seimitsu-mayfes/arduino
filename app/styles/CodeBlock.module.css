@@ -1,0 +1,28 @@
+.codeBlockContainer {
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .codeBlock {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
+  .copyButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4a4a4a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .copyButton:hover {
+    background-color: #5a5a5a;
+  }
