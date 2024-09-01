@@ -55,6 +55,7 @@ const TabContent = React.memo(({ tab, isActive }: { tab: TabName; isActive: bool
 // メインコンポーネント。タブの切り替えとそれに応じたコンテンツ表示を管理します。
 export default function LEDPage() {
     const [activeTab, setActiveTab] = useState<TabName>('knowledge'); // 現在アクティブなタブを管理
+    const taskName = 'LED'; // タスク名を設定
 
     // タブが変更されたときに呼び出される関数。タブの状態を変更し、ログを出力します。
     const handleTabChange = (tab: TabName) => {
@@ -70,7 +71,7 @@ export default function LEDPage() {
     return (
         <div className="flex flex-col min-h-screen">
             {/* タブの変更を行う上部バー。 `handleTabChange` が呼び出される。 */}
-            <UpperBar onTabChange={handleTabChange} />
+            <UpperBar onTabChange={handleTabChange} taskName={taskName} />
             {/* 各タブのコンテンツを表示するエリア。現在のタブに応じて内容が切り替わる。 */}
             <main className="flex grow p-6 overflow-hidden relative">
                 {(['knowledge', 'task', 'debug', 'comment'] as TabName[]).map((tab) => (

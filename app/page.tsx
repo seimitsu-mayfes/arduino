@@ -3,6 +3,8 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline'; // Heroicons の�
 import Link from 'next/link'; // Next.js の Link コンポーネントをインポート
 import styles from './ui/home.module.css'; // モジュールCSSのインポート
 import { lusitana } from './ui/fonts'; // フォントのインポート
+import nextConfig from "@/next.config.mjs";
+const BASE_PATH = nextConfig.basePath || "";
 
 export default function Page() {
   return (
@@ -32,7 +34,8 @@ export default function Page() {
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           <Image
-            src="/hero-desktop.png"
+            src={`${BASE_PATH}/hero-desktop.png`}
+            // src="/hero-desktop.png"
             width={1000}
             height={760}
             className="hidden md:block"

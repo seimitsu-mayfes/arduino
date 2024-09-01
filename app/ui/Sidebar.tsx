@@ -1,44 +1,52 @@
-"use client";  // クライアントサイドでの実行を指定
+"use client";
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
-import Link from 'next/link'; // Next.js の Link コンポーネントをインポート
-
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Sidebar() {
-  const [isOpen, setIsOpen] = useState(false);  // 開閉状態を管理するための state
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  const menuItems = [
+    { href: '/what_is_arduino', label: 'Arduinoとは' },
+    { href: '/setup', label: 'セットアップ' },
+    { href: '/prior_knowledge', label: '予備知識' },
+    { href: '/LED', label: 'LEDを実装' },
+    { href: '/botton', label: 'ボタンを実装' },
+    { href: '/motor', label: 'モーター' },
+    { href: '/ultrasonic', label: '超音波センサを実装' },
+    { href: '/board', label: '基盤に固定' },
+    { href: '/debug', label: 'デバッグ' },
+    { href: '/comments', label: 'コメント' },
+    { href: '/others', label: '参考資料' },
+  ];
 
   return (
     <aside 
       className={`fixed top-0 ${isOpen ? 'left-0 w-64 h-full' : 'left-0 w-16 h-16'} bg-gray-700 p-4 transition-all duration-300 z-50`}
     >
-      {/* ハンバーガーメニューのボタン */}
       <button 
         onClick={() => setIsOpen(!isOpen)} 
         className="text-white mb-4 flex items-center"
       >
-        <Bars3Icon className={`h-6 w-6 ${isOpen ? 'block' : 'hidden'}`} />
-        {isOpen ? 'Close Menu' : 'Open Menu'}
+        <Bars3Icon className="h-6 w-6" />
+        {isOpen && <span className="ml-2">Close Menu</span>}
       </button>
-      {/* サイドバーのコンテンツ */}
       <nav className={`mt-6 ${isOpen ? 'block' : 'hidden'}`}>
         <ul className="space-y-4">
-          <li><Link href="/what_is_arduino" className="text-white">Arduinoとは</Link></li>
-          <li><Link href="/setup" className="text-white">セットアップ</Link></li>
-          <li><Link href="/prior_knowledge" className="text-white">予備知識</Link></li>
-          <li><Link href="/LED" className="text-white">LEDを実装</Link></li>
-          <li><Link href="/botton" className="text-white">ボタンを実装</Link></li>
-          <li><Link href="motor" className="text-white">モーター</Link></li>
-          <li><Link href="/ultrasonic" className="text-white">超音波センサを実装</Link></li>
-          <li><Link href="/board" className="text-white">基盤に固定</Link></li>
-          <li><Link href="/debug" className="text-white">デバッグ</Link></li>
-          <li><Link href="/comments" className="text-white">コメント</Link></li>
-          <li><Link href="/others" className="text-white">参考資料</Link></li>
+          {menuItems.map((item) => (
+            <li key={item.href}>
+              <Link 
+                href={item.href} 
+                className={`text-white ${pathname === item.href ? 'font-bold bg-gray-600 px-2 py-1 rounded' : ''}`}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </aside>
   );
 }
-
-
-
-

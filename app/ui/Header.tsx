@@ -1,13 +1,17 @@
-import AcmeLogo from './acme-logo';
+
 
 export default function Header() {
   return (
     <header className="bg-blue-500 p-4 flex items-center justify-between sticky top-0 left-0 w-full z-50">
-      <AcmeLogo />
-      <nav>
+      <div className="w-1/3">
+      </div>
+      <div className="w-1/3 flex justify-center">
+        <h1 className="text-white text-2xl font-bold">Arduino入門</h1>
+      </div>
+      <nav className="w-1/3 flex justify-end">
         <ul className="flex space-x-4">
           <li><a href="#" className="text-white">ログイン</a></li>
-          <li><a href="#" className="text-white">精密について</a></li>
+          <li><a href="/contact" className="text-white">about us</a></li>
         </ul>
       </nav>
     </header>

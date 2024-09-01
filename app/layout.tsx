@@ -1,12 +1,12 @@
-import '@/app/ui/global.css'; // グローバルCSSのインポート
-import { inter } from '@/app/ui/fonts'; // フォントのインポート
-import Header from './ui/Header'; // ヘッダーのインポート
-import Footer from './ui/Footer'; // フッターのインポート
-import Sidebar from './ui/Sidebar'; // サイドバーのインポート
+import '@/app/ui/global.css';
+import { inter } from '@/app/ui/fonts';
+import Header from './ui/Header';
+import Footer from './ui/Footer';
+import Sidebar from './ui/Sidebar';
 import { ReactNode } from 'react';
 
 interface RootLayoutProps {
-  children: ReactNode; // 子コンテンツを受け取るためのプロパティ
+  children: ReactNode;
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -14,17 +14,20 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
         <div className="flex flex-col min-h-screen">
-          <Header /> {/* ヘッダーを共通レイアウトに追加 */}
+          <Header />
           <div className="flex grow">
-            <Sidebar /> {/* サイドバーを共通レイアウトに追加 */}
-            <main className="flex grow flex-col p-6 ml-64"> {/* サイドバーの幅に合わせて余白を追加 */}
-              {children} {/* ページコンテンツを挿入 */}
-            </main>
+            <Sidebar />
+            <div className="flex-grow overflow-x-hidden">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <main className="py-6">
+                  {children}
+                </main>
+              </div>
+            </div>
           </div>
-          <Footer /> {/* フッターを共通レイアウトに追加 */}
+          <Footer />
         </div>
       </body>
     </html>
   );
 }
-
