@@ -10,8 +10,8 @@ export default function Header() {
       </div>
       <nav className="w-1/3 flex justify-end">
         <ul className="flex space-x-4">
-          <li><a href="#" className="text-white">ログイン</a></li>
-          <li><a href="/contact" className="text-white">about us</a></li>
+          <li><a href="/login" className="text-white">ログイン</a></li>
+          <li><a href="/about-us" className="text-white">about us</a></li>
         </ul>
       </nav>
     </header>
