@@ -2,11 +2,11 @@
 
 import React, { useRef, useEffect } from 'react';
 import PriorKnowledge from '@/app/ui/prior_knowledge/knowledge';
-import UltrasonicContent from '@/app/ui/(do_them)/ultrasonic';
+import ButtonContent from '@/app/ui/(do_them)/button';
 import Debug from '@/app/ui/debug/debug';
 import Comments from '@/app/ui/comments/comments';
 import { useTabContext } from '@/app/(do_them)/layout';
-import DoThemLayout from '@/app/(do_them)/layout';
+
 
 type TabName = 'knowledge' | 'task' | 'debug' | 'comment';
 
@@ -20,7 +20,7 @@ const TabContent = React.memo(({ tab, isActive }: { tab: TabName; isActive: bool
     const content = (() => {
         switch (tab) {
             case 'task':
-                return <UltrasonicContent />;
+                return <ButtonContent />;
             case 'debug':
                 return <Debug />;
             case 'comment':
@@ -43,7 +43,7 @@ const TabContent = React.memo(({ tab, isActive }: { tab: TabName; isActive: bool
     );
 });
 
-export default function UltrasonicPage() {
+export default function ButtonPage() {
     const { activeTab } = useTabContext();
 
     return (

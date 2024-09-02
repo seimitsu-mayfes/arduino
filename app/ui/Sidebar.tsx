@@ -13,7 +13,7 @@ export default function Sidebar() {
     { href: '/setup', label: 'セットアップ' },
     { href: '/prior_knowledge', label: '予備知識' },
     { href: '/LED', label: 'LEDを実装' },
-    { href: '/botton', label: 'ボタンを実装' },
+    { href: '/button', label: 'ボタンを実装' },
     { href: '/motor', label: 'モーター' },
     { href: '/ultrasonic', label: '超音波センサを実装' },
     { href: '/board', label: '基盤に固定' },

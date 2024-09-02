@@ -1,17 +1,17 @@
 "use client";
 
-import { useState } from 'react';
+import React from 'react';
+import { useTabContext } from '@/app/(do_them)/layout';
 
 type TabName = 'knowledge' | 'task' | 'debug' | 'comment';
 
-export default function UpperBar({ onTabChange, taskName }: { onTabChange: (tab: TabName) => void, taskName: string }) {
-  const [activeTab, setActiveTab] = useState<TabName>('knowledge');
+export default function UpperBar({ taskName }: { taskName: string }) {
+  const { activeTab, setActiveTab } = useTabContext();
 
   const handleTabChange = (tab: TabName) => {
     setActiveTab(tab);
-    onTabChange(tab);
   };
-  
+
   return (
     <nav className="fixed top-16 left-0 w-full bg-gray-800 text-white py-4 z-40 flex justify-center rounded-lg">
       <button
