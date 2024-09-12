@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useEffect } from 'react';
-import PriorKnowledge from '@/app/ui/prior_knowledge/knowledge';
+import PriorKnowledge from './knowledge';
 import ButtonContent from '@/app/ui/(do_them)/button';
 import Debug from '@/app/ui/debug/debug';
 import Comments from '@/app/ui/comments/comments';

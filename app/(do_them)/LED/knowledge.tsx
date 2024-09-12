@@ -1,5 +1,4 @@
-//import { lusitana } from '../ui/fonts';
-import AllKnowledgeContent from '@/app/ui/knowledge/knowledge-all';
+import {ResistorColorCode,HeatShrinkTube,ArduinoPin,BreadBoard,WireStripper,ArduinoSoftwareBasics,Multimeter,Soldering,GlueGun} from '@/app/ui/knowledge/know';
 
 export default function PriorKnowledge() {
   return (
@@ -9,10 +8,18 @@ export default function PriorKnowledge() {
       </div>
       <div className="flex grow flex-col gap-4">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10">
-          <p className="text-gray-800">
+          {/* <p className="text-gray-800">
             じっくり見なくてもいいです。気になった時に見てください。
-          </p>
-          <AllKnowledgeContent />
+          </p> */}
+          <ResistorColorCode />
+          <HeatShrinkTube />
+          <ArduinoPin />
+          <BreadBoard />
+          <WireStripper />
+          <ArduinoSoftwareBasics />
+          <Multimeter />
+          <Soldering />
+          <GlueGun />
         </div>
       </div>
     </div>
