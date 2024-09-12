@@ -1,22 +1,24 @@
 import Link from 'next/link';
+import styles from './home.module.css';
 
 export default function Header() {
   return (
-    <header className="bg-blue-500 p-4 flex items-center justify-between sticky top-0 left-0 w-full z-50">
-      <div className="w-1/3">
+    <header className={styles.header}>
+      <div className={styles.leftSection}>
+        {/* ここに必要に応じてコンテンツを追加 */}
       </div>
-      <div className="w-1/3 flex justify-center">
-        <h1 className="text-white text-2xl font-bold">Arduino入門</h1>
+      <div className={styles.centerSection}>
+        <h1 className={styles.title}>Arduino入門</h1>
       </div>
-      <nav className="w-1/3 flex justify-end">
-        <ul className="flex space-x-4">
+      <nav className={styles.nav}>
+        <ul className={styles.navList}>
           <li>
-            <Link href="/login" className="text-white">
+            <Link href="/login" className={styles.navLink}>
               ログイン
             </Link>
           </li>
           <li>
-            <Link href="/about-us" className="text-white">
+            <Link href="/about-us" className={styles.navLink}>
               about us
             </Link>
           </li>

@@ -47,7 +47,7 @@ export function HeatShrinkTube() {
         熱収縮チューブは剥き出しの二つの動線をつなぐために使います。
       </p>
       <div className={styles.imageContainer}>
-        <Image src={`${BASE_PATH}/hero-desktop.png`} width={300} height={200} alt="チューブ" />
+        <Image src={`${BASE_PATH}/knowledge/tube.jpg`} width={300} height={200} alt="チューブ" />
       </div>
       <div className={styles.linkContainer}>
         <Link href="https://www.monotaro.com/note/productinfo/heatshrinktube_feature/"

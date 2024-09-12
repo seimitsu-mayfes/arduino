@@ -1,4 +1,3 @@
-//import { lusitana } from '../ui/fonts';
 import AllKnowledgeContent from '@/app/ui/knowledge/knowledge-all';
 
 export default function PriorKnowledge() {
@@ -8,8 +7,8 @@ export default function PriorKnowledge() {
         <h1 className="text-2xl font-bold text-white">予備知識</h1>
       </div>
       <div className="flex grow flex-col gap-4">
-        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10">
-          <p className="text-gray-800">
+        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 py-10">
+          <p className="text-gray-800 px-6">
             じっくり見なくてもいいです。気になった時に見てください。
           </p>
           <AllKnowledgeContent />
