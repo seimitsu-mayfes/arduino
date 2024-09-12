@@ -1,10 +1,12 @@
+import Link from 'next/link';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-800 p-4 text-white text-center">
       <p className="mb-2">
-        © {currentYear}  Arduino入門. All rights reserved.
+        © {currentYear} Arduino入門. All rights reserved.
       </p>
       <p className="mb-2">
         Created by [rrrttt-rt] for Arduino beginners
@@ -14,7 +16,9 @@ export default function Footer() {
       </p>
       <p className="mb-2">
         <a href="https://www.arduino.cc/" className="underline hover:text-blue-300" target="_blank" rel="noopener noreferrer">Arduino公式サイト</a> | 
-        <a href="/contact" className="underline hover:text-blue-300 ml-2">お問い合わせ</a>
+        <Link href="/about-us" className="underline hover:text-blue-300 ml-2">
+          お問い合わせ
+        </Link>
       </p>
       <p>
         最終更新日: {new Date().toLocaleDateString()}

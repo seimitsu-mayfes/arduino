@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -10,12 +10,18 @@ export default function Header() {
       </div>
       <nav className="w-1/3 flex justify-end">
         <ul className="flex space-x-4">
-          <li><a href="/login" className="text-white">ログイン</a></li>
-          <li><a href="/about-us" className="text-white">about us</a></li>
+          <li>
+            <Link href="/login" className="text-white">
+              ログイン
+            </Link>
+          </li>
+          <li>
+            <Link href="/about-us" className="text-white">
+              about us
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
   );
 }
-
-

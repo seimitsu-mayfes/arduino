@@ -1,5 +1,4 @@
 import { lusitana } from '../ui/fonts';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function GitHubDiscussionGuide() {
@@ -11,49 +10,36 @@ export default function GitHubDiscussionGuide() {
       <div className="flex grow flex-col gap-4">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10">
           <p className={`${lusitana.className} text-lg text-gray-800`}>
-            GitHub Discussionsを使用して連絡を取り合う予定です。ただし、具体的な使用方法についてはまだ確定していません。
+            GitHub Discussionsを使用して連絡を取り合います。以下の情報をご確認ください。
           </p>
-          <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4">
-            <p className="font-bold">注意:</p>
-            <p>現在、GitHub Discussionsの具体的な使用方法について準備中です。しばらくお待ちください。</p>
-          </div>
-          <h2 className="text-lg font-bold text-gray-800">GitHub Discussionsとは</h2>
+          <h2 className="text-lg font-bold text-gray-800">GitHub Discussionsへのアクセス</h2>
           <p className="text-gray-800">
-            GitHub Discussionsは、プロジェクトに関する会話やQ&Aを行うためのスペースです。以下のような特徴があります：
-          </p>
-          <ul className="list-disc pl-5 text-gray-800">
-            <li>トピックごとに整理された会話</li>
-            <li>チーム全体での情報共有が容易</li>
-            <li>過去の議論の検索が可能</li>
-          </ul>
-          <Image
-            src="/github-discussions-placeholder.png"
-            width={400}
-            height={300}
-            className="max-w-full h-auto rounded-lg shadow-md"
-            alt="GitHub Discussions画面のプレースホルダー"
-          />
-          <h2 className="text-lg font-bold text-gray-800">今後の予定</h2>
-          <p className="text-gray-800">
-            GitHub Discussionsの具体的な使用方法が決まり次第、以下の情報を提供する予定です：
-          </p>
-          <ul className="list-disc pl-5 text-gray-800">
-            <li>アクセス方法</li>
-            <li>新しいディスカッションの作成方法</li>
-            <li>既存のディスカッションへの参加方法</li>
-            <li>効果的な使用のためのガイドライン</li>
-          </ul>
-          <p className="text-gray-800 mt-4">
-            詳細が決まり次第、このページを更新いたします。それまでしばらくお待ちください。
+            以下のリンクからGitHub Discussionsにアクセスできます：
           </p>
           <Link
-            href="https://docs.github.com/en/discussions"
-            className="text-blue-500 underline mt-4"
+            href="https://github.com/rrrttt-rt/aruduino/discussions/2"
+            className="text-blue-500 underline"
             target="_blank"
             rel="noopener noreferrer"
           >
-            GitHub Discussionsの公式ドキュメント（参考）
+            Arduino入門 GitHub Discussions
           </Link>
+          <h2 className="text-lg font-bold text-gray-800">使用方法</h2>
+          <ul className="list-disc pl-5 text-gray-800">
+            <li>新しいディスカッションを開始する場合は、「New discussion」ボタンをクリックしてください。</li>
+            <li>既存のディスカッションに参加する場合は、該当するスレッドをクリックし、コメントを追加してください。</li>
+            <li>質問、アイデア、お知らせなど、様々な目的でDiscussionsを使用できます。</li>
+          </ul>
+          <h2 className="text-lg font-bold text-gray-800">ガイドライン</h2>
+          <ul className="list-disc pl-5 text-gray-800">
+            <li>投稿する前に、既存のディスカッションをチェックし、重複を避けてください。</li>
+            <li>明確で簡潔なタイトルを使用し、内容を適切に要約してください。</li>
+            <li>礼儀正しく、建設的な態度を保ってください。</li>
+            <li>コードや長文を投稿する場合は、適切なフォーマットを使用してください。</li>
+          </ul>
+          <p className="text-gray-800 mt-4">
+            GitHub Discussionsを活用して、効果的なコミュニケーションと情報共有を行いましょう。
+          </p>
         </div>
       </div>
     </div>

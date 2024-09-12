@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './knowledge.module.css';
+import nextConfig from "@/next.config.mjs";
+const BASE_PATH = nextConfig.basePath || "";
 
 export function ResistorColorCode() {
   return (
@@ -12,7 +14,6 @@ export function ResistorColorCode() {
       <div className={styles.imageContainer}>
         <Image 
           src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Resistor_Color_Code.svg" 
-          //src="https://wokwi.com/projects/408799893419168769"
           width={600} 
           height={400} 
           alt="抵抗のカラーコード" 
@@ -46,7 +47,7 @@ export function HeatShrinkTube() {
         熱収縮チューブは剥き出しの二つの動線をつなぐために使います。
       </p>
       <div className={styles.imageContainer}>
-        <Image src="/knowledge/tube.jpg" width={300} height={200} alt="チューブ" />
+        <Image src={`${BASE_PATH}/hero-desktop.png`} width={300} height={200} alt="チューブ" />
       </div>
       <div className={styles.linkContainer}>
         <Link href="https://www.monotaro.com/note/productinfo/heatshrinktube_feature/"
