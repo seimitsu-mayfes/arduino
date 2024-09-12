@@ -19,7 +19,8 @@ export default function Sidebar() {
     { href: '/board', label: '基盤に固定' },
     { href: '/debug', label: 'デバッグ' },
     { href: '/comments', label: 'コメント' },
-    { href: '/others', label: '参考資料' },
+    { href: '/others-site', label: '参考サイト' },
+    { href: '/others-tool', label: '参考ツール' },
   ];
 
   return (

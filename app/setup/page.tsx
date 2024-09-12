@@ -35,7 +35,7 @@ export default function SetupAndUsage() {
                 <p>まずArduinoを起動してNew Sketchを押します。すると新たなウィンドウが現れ、そこに適当なプログラムを書きます。</p>
               </div>
               <Image
-                src="/arduino-new-sketch.png"
+                src="/setup/arduino-new-sketch.png"
                 width={400}
                 height={300}
                 className="md:w-1/2 max-w-full h-auto rounded-lg shadow-md"
@@ -48,7 +48,7 @@ export default function SetupAndUsage() {
                 <p>このようにSaveします。（初めてSaveするときはSave Asで名前をつけて保存してください。）</p>
               </div>
               <Image
-                src="/arduino-save.png"
+                src="/setup/arduino-save.png"
                 width={400}
                 height={300}
                 className="md:w-1/2 max-w-full h-auto rounded-lg shadow-md"
@@ -61,7 +61,7 @@ export default function SetupAndUsage() {
                 <p>次にPCとArduinoを物理的に接続します。</p>
               </div>
               <Image
-                src="/arduino-upload.png"
+                src="/setup/arduino-upload.png"
                 width={400}
                 height={300}
                 className="md:w-1/2 max-w-full h-auto rounded-lg shadow-md"
@@ -74,7 +74,7 @@ export default function SetupAndUsage() {
                 <p>そしてソフト上でも接続する必要があります。</p>
               </div>
               <Image
-                src="/arduino-connect.png"
+                src="/setup/arduino-connect.png"
                 width={400}
                 height={300}
                 className="md:w-1/2 max-w-full h-auto rounded-lg shadow-md"
@@ -84,7 +84,7 @@ export default function SetupAndUsage() {
                 <p>Select Other Board and Portを押し、Arduino Uno（使用デバイス）とSerial Port（USB）（使用しているポート）を選択します。これで接続が完了します。</p>
               </div>
               <Image
-                src="/arduino-select-board.png"
+                src="/setup/arduino-select-board.png"
                 width={400}
                 height={300}
                 className="md:w-1/2 max-w-full h-auto rounded-lg shadow-md"
@@ -98,7 +98,7 @@ export default function SetupAndUsage() {
                 <p>最後に青色のボタンを押すことでPCからプログラムのインポートと実行が行われます。</p>
               </div>
               <Image
-                src="/arduino-upload.png"
+                src="/setup/arduino-upload.png"
                 width={400}
                 height={300}
                 className="md:w-1/2 max-w-full h-auto rounded-lg shadow-md"
@@ -111,7 +111,7 @@ export default function SetupAndUsage() {
             プログラムに変更がない時はPCに繋ぐ必要はありません。ボタンを押すだけで再実行が可能です。ただし電源が必要なので、以下のようにに繋ぐなどして電源を確保しなければなりません。
           </p>
           <Image
-            src="/arduino-power.png"
+            src="/setup/arduino-power.png"
             width={400}
             height={300}
             className="max-w-full h-auto rounded-lg shadow-md"

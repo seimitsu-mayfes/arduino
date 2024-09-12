@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useEffect } from 'react';
-import PriorKnowledge from '@/app/ui/prior_knowledge/knowledge';
+import PriorKnowledge from './knowledge';
 import BoardContent from '@/app/ui/(do_them)/board';  // LEDContentをBoardContentに変更
 import Debug from '@/app/ui/debug/debug';
 import Comments from '@/app/ui/comments/comments';

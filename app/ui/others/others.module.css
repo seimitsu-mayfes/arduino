@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #f9fafb;
+    padding: 1.5rem 2.5rem;
+  }
+  
+  .title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #1f2937;
+  }
+  
+  .text {
+    color: #1f2937;
+  }
+  
+  .imageContainer {
+    margin-top: 1rem;
+  }
+  
+  .caption {
+    margin-top: 0.5rem;
+    color: #4b5563;
+    font-size: 0.875rem;
+  }
+  
+  .link {
+    color: #3b82f6;
+    text-decoration: underline;
+  }
+  
+  .linkContainer {
+    border: 2px solid #d1d5db;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .table {
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #d1d5db;
+  }
+  
+  .tableHeader {
+    background-color: #e5e7eb;
+  }
+  
+  .tableHeaderCell {
+    border: 1px solid #d1d5db;
+    padding: 0.5rem;
+    font-weight: bold;
+    color: #374151;
+  }
+  
+  .tableRow {
+    background-color: white;
+  }
+  
+  .tableRowAlt {
+    background-color: #f9fafb;
+  }
+  
+  .tableCell {
+    border: 1px solid #d1d5db;
+    padding: 0.5rem;
+  }
+
+  .warningContainer {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .warningText {
+    color: #856404;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #374151;
+    margin-top: 1rem;
+  }
+  
+  .orderedList {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+    color: #1f2937;
+  }
+  
+  .listItem {
+    margin-bottom: 0.5rem;
+  }
+  
+  .underline {
+    text-decoration: underline;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+  }

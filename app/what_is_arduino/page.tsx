@@ -36,7 +36,7 @@ export default function WhatIsArduino() {
         </div>
         <div className="flex items-center justify-center p-6">
           <Image
-            src="/arduino-image.png"
+            src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Noname_clone_of_Arduino_Uno_-_top.jpg"
             width={800}
             height={600}
             className="max-w-full h-auto"
@@ -44,7 +44,7 @@ export default function WhatIsArduino() {
           />
         </div>
         <Link
-          href="/others"
+          href="/others-site"
           className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
         >
           <span>More Info</span>
