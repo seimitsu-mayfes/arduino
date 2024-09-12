@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useTabContext } from '@/app/(do_them)/layout';
+import styles from './upper_bar.module.css';
 
 type TabName = 'knowledge' | 'task' | 'debug' | 'comment';
 
@@ -13,27 +14,27 @@ export default function UpperBar({ taskName }: { taskName: string }) {
   };
 
   return (
-    <nav className="fixed top-16 left-0 w-full bg-gray-800 text-white py-4 z-40 flex justify-center rounded-lg">
+    <nav className={styles.nav}>
       <button
-        className={`mx-4 px-4 py-2 rounded w-32 ${activeTab === 'knowledge' ? 'bg-blue-600' : ''}`}
+        className={`${styles.button} ${activeTab === 'knowledge' ? styles.activeButton : ''}`}
         onClick={() => handleTabChange('knowledge')}
       >
         Knowledge
       </button>
       <button
-        className={`mx-4 px-4 py-2 rounded w-32 ${activeTab === 'task' ? 'bg-blue-600' : ''}`}
+        className={`${styles.button} ${activeTab === 'task' ? styles.activeButton : ''}`}
         onClick={() => handleTabChange('task')}
       >
         {taskName}
       </button>
       <button
-        className={`mx-4 px-4 py-2 rounded w-32 ${activeTab === 'debug' ? 'bg-blue-600' : ''}`}
+        className={`${styles.button} ${activeTab === 'debug' ? styles.activeButton : ''}`}
         onClick={() => handleTabChange('debug')}
       >
         Debug
       </button>
       <button
-        className={`mx-4 px-4 py-2 rounded w-32 ${activeTab === 'comment' ? 'bg-blue-600' : ''}`}
+        className={`${styles.button} ${activeTab === 'comment' ? styles.activeButton : ''}`}
         onClick={() => handleTabChange('comment')}
       >
         Comment

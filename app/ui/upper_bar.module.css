@@ -1,0 +1,43 @@
+/* upper_bar.module.css */
+.nav {
+    position: fixed;
+    top: 4rem; /* 64px */
+    left: 0;
+    width: 100%;
+    background-color: #1f2937; /* bg-gray-800 */
+    color: white;
+    padding: 1rem 0;
+    z-index: 40;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+  }
+  
+  .button {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    width: 8rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #4b5563; /* bg-gray-600 */
+  }
+  
+  .activeButton {
+    background-color: #2563eb; /* bg-blue-600 */
+  }
+  
+  @media (max-width: 640px) {
+    .nav {
+      padding: 0.5rem 0;
+    }
+  
+    .button {
+      margin: 0 0.25rem;
+      padding: 0.25rem 0.5rem;
+      width: auto;
+      font-size: 0.875rem;
+    }
+  }

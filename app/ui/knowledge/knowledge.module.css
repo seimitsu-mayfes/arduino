@@ -7,6 +7,11 @@
     background-color: #f9fafb;
     padding: 1.5rem 2.5rem;
   }
+  @media screen and (max-width: 640px) {
+    .container {
+      padding: 1rem 0; /* 左右のパディングを0に */
+    }
+  }
   
   .title {
     font-size: 1.125rem;
